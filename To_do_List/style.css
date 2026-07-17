@@ -1,0 +1,32 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+}
+input{
+    width:200px;
+    height:30px
+}
+button{
+    width:70px;
+    height: 30px;
+    border-radius: 20px;
+    color: black;
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif;
+
+
+}
+
+.task{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 200px;
+    margin-top: 10px;
+}
+
+.task p{
+    margin: 0;
+}
