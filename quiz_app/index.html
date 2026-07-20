@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Quiz_App</title>
+</head>
+<body>
+    <div>
+        <h1>Quiz Competation</h1>
+        <h1 id="h"> </h1>
+        <div id="div">
+            
+        <li>
+            <input type="radio" name="option" id="op1">
+            <label id="l1" for="op1"></label>
+        </li>
+        <li>
+            <input type="radio" name="option" id="op2">
+            <label id="l2" for="op2"></label>
+        </li>
+        <li>
+            <input type="radio" name="option" id="op3">
+            <label id="l3" for="op3"></label>
+        </li>
+        <li>
+            <input type="radio" name="option" id="op4">
+            <label id="l4" for="op4"></label>
+        </li>
+
+            <button id="btn">Next</button>
+        </div>
+
+        
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
+
+
+<!-- 1. What is the name attribute?
+
+You wrote:
+
+<input type="radio" name="option" id="op1">
+<input type="radio" name="option" id="op2">
+<input type="radio" name="option" id="op3">
+<input type="radio" name="option" id="op4">
+
+Notice that all four radio buttons have the same name:
+
+name="option"
+
+This tells the browser:
+
+"These radio buttons belong to the same group."
+
+So the browser allows only one of them to be selected.
+
+Example
+( ) Mumbai
+(●) Delhi
+( ) Chennai
+( ) Hyderabad
+
+If you click Chennai, the browser automatically does:
+
+( ) Mumbai
+( ) Delhi
+(●) Chennai
+( ) Hyderabad
+
+You didn't write any JavaScript for this.
+
+The browser does it because all of them have:
+
+name="option"
+What happens if the names are different?
+<input type="radio" name="a">
+<input type="radio" name="b">
+<input type="radio" name="c">
+<input type="radio" name="d">
+
+Now each radio button belongs to a different group.
+
+You can select all of them:
+
+(●) Mumbai
+(●) Delhi
+(●) Chennai
+(●) Hyderabad
+
+That's not what you want in a quiz.
+
+2. What is the id attribute?
+<input id="op1">
+
+The id uniquely identifies an element.
+
+JavaScript uses it:
+
+const op1 = document.getElementById("op1");
+
+Each id must be unique.
+
+3. What does type do?
+
+The type attribute tells the browser what kind of input you want.
+
+type="text"
+<input type="text">
+
+Output:
+
++------------------+
+|                  |
++------------------+
+
+A text box where the user can type.
+
+type="password"
+<input type="password">
+
+Output:
+
++------------------+
+| ********         |
++------------------+
+
+The typed characters are hidden.
+
+type="radio"
+<input type="radio">
+
+Output:
+
+( )
+
+A radio button.
+
+type="checkbox"
+<input type="checkbox">
+
+Output:
+
+☐
+
+Unlike radio buttons, checkboxes allow selecting multiple options.
+
+Example:
+
+☑ Cricket
+☑ Football
+☐ Tennis
+type="number"
+<input type="number">
+
+Output:
+
++--------+
+|   25   |
++--------+
+
+Only numeric input is allowed.
+
+type="email"
+<input type="email">
+
+The browser checks whether the entered text looks like an email address.
+
+type="date"
+<input type="date">
+
+Shows a calendar date picker.
+
+type="color"
+<input type="color">
+
+Shows a color picker.
+
+type="file"
+<input type="file">
+
+Lets the user choose a file from their computer.
+
+type="range"
+<input type="range">
+
+Shows a slider.
+
+type="submit"
+<input type="submit">
+
+Creates a submit button for a form. -->
+
+<!-- What is a <label>?
+
+A <label> is the text that describes an input element.
+
+For example:
+
+<input type="radio" id="op1">
+<label for="op1">Delhi</label>
+
+On the webpage, you'll see:
+
+( ) Delhi
+
+Here:
+
+The radio button is the input.
+Delhi is the label.
+Why not just write text?
+
+You could write:
+
+<input type="radio"> Delhi
+
+It looks the same.
+
+But there's a big difference.
+
+Benefit 1: Clicking the text selects the radio button
+
+With a label:
+
+<input type="radio" id="op1">
+<label for="op1">Delhi</label>
+
+If you click on Delhi, the radio button is selected automatically.
+
+Click here ↓
+
+( ) Delhi
+
+The browser changes it to:
+
+(●) Delhi
+
+Even though you clicked the text, not the circle.
+
+Without a label:
+
+<input type="radio"> Delhi
+
+You must click exactly on the small circle.
+
+Clicking Delhi does nothing.
+
+Benefit 2: Accessibility
+
+People using screen readers (for example, visually impaired users) can understand what each input is for.
+
+The screen reader reads:
+
+"Delhi, radio button."
+
+instead of just:
+
+"Radio button." -->
